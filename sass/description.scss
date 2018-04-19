@@ -1,0 +1,58 @@
+
+.description {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+h3 {
+    font-size: 180%;
+    line-height: 38px;
+    text-align: center;
+    font-style: italic;
+    font-weight: 300;
+    margin-top: 15px;
+    margin-bottom: 33px;
+    position: absolute;
+}
+
+.description-content {
+   padding-bottom: 40px;
+   padding-top: 120px;
+   width: 100%;
+}
+
+.description p {
+    font-family: "FuturaStd Book";
+    font-size: 135%;
+    line-height: 29px;
+    text-align: center;    
+}
+
+.cursive {
+    font-style: italic;
+}
+
+
+@media (max-width: 767px) {
+
+    .description {
+       width: 90vw;
+       text-align: center;
+       height: 100%;
+    }
+
+    .description p {
+        margin: 20px 10px;
+    }
+}
+
+@media (max-width: 320px) {
+     
+    .description {
+        margin-bottom: 150px;
+        min-width: 320px;
+        height: 70vh;
+    }
+}    

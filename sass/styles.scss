@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "FuturaStd Book";
+    src: url("../fonts/FuturaStd Book.otf");
+   }
+   
+@font-face {
+    font-family: "FuturaStd Bold";
+    src: url("../fonts/FuturaStd Bold.otf");
+   }
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing:border-box;
+}
+
+html, body {
+    height: 100%;
+    max-width: 1360px;
+    margin:0 auto;
+    font-family: 'FuturaStd Book';
+    width: 100%;
+}
+
+body {
+	display: flex;
+    flex-direction: column;
+    font-family: 'FuturaStd Book';
+}
+
+header, main, footer {
+    flex-shrink: 0;
+    font-family: 'FuturaStd Book';
+}
+
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	max-width:580px;
+    margin:0 auto;
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+
+    .wrapper {
+        max-width: 767px;
+        margin: 0 auto;
+        width: 100%;
+    }
+}    
+
+@media (max-width: 320px) {
+    
+   .wrapper {
+        min-width: 320px;
+    }
+}
+
+@import 'header';
+@import 'collage';
+@import 'description';
+@import 'history';

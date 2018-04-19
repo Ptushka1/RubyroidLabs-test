@@ -1,0 +1,26 @@
+.collage {
+    background: url("../img/women.png") no-repeat;
+    height: 550px;
+    width: 100%;
+    background-size: 100%;
+    background-position: center;
+}
+   
+@media (max-width: 767px) { 
+   
+   .collage {
+        background: url("../img/women-collage.png") no-repeat;
+        max-height: 200px;
+        width: auto;
+        background-size: 100%;
+        background-position: center;
+    }
+}
+
+@media (max-width: 320px) {
+   
+    .collage {
+        min-width: 320px;
+        height: 70vh;
+    }
+}

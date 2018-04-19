@@ -1,0 +1,127 @@
+
+.header {
+	width: 100%;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    background-color: white;
+    padding-top: 20px;
+}
+
+.header__logo{
+    cursor: pointer;
+    position: relative;
+    margin: auto;
+    width: 384px;
+    height: 84px;
+    background-image: url("../img/logo.jpg");
+    background-size: 100%;
+}
+
+.menu__adaptive {
+    display: none;
+}
+
+.header__sign {
+    right:60px;
+    margin-top: 20px;
+    display:block;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    border: 1px solid white;
+    position: absolute;
+    font: 300 14px Futura;
+    color: #000;
+}
+
+
+.main__menu__nav {
+	display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 16px;
+    text-transform: lowercase;
+    /*margin-left: 160px;*/
+    margin:30px 0 40px 0;
+
+}
+
+.nav__link {
+	display: flex;
+    align-items: center;
+	font-size: 1.6rem;
+	text-decoration: none;
+	color: #000;
+}
+
+.nav__link:hover{
+	color: #ffa687;
+}
+
+.nav__link::after {
+	font-size: 0.8rem;
+	padding:0 0 0 3px;
+}
+
+.nav__link:hover::after{
+	color: #ffa687;
+}
+
+@media (max-width: 767px) {
+
+    .header {
+        padding-bottom:40px;
+    }
+
+    .header__logo{
+        cursor: pointer;
+        position: relative;
+        margin: 0 auto;
+        max-width: 120px;
+        height: 24px;
+        background-image: url("../img/logo.jpg") no-repeat;
+        background-size: 100%;
+        top:20px;
+    }
+    
+    .header__sign {
+        float: right;
+    }
+
+    .main__menu__nav {
+        display: none;
+    }
+
+    .menu__adaptive {
+        font-size: 2em;
+        left:20px;
+        margin-top: 20px;
+        display:block;
+        position: absolute;
+        cursor: pointer;
+    }
+
+    .fa  {
+        display: block;
+        font-family: FontAwesome;
+        top: 0px;
+    }
+
+    .fa-bars::before {
+        content: "\f0c9";
+    }
+}
+
+@media (max-width: 320px) {
+  
+    .header {
+        padding: 0;
+    }
+    
+    .header__sign {
+        font-size: 12px;
+        right: 20px;
+    }
+}
